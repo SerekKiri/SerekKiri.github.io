@@ -1,35 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple Facebook Messenger to Discord bridge">
+  <meta name="author" content="Bjornskjald">
 
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
-    <title>ChatPlug</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+  <title>ChatPlug</title>
 
-    <body>
-        <header class="header">
-                <img src="assets/logo.svg" width="40px" height="40px" alt="logo"/>
-                <section class="list">
-                        <ul>
-                          <li><a href="https://github.com/feelfreelinux/ChatPlug">GitHub</a></li>
-                          <li><a href="features.html">Features</a></li>
-                          <li><a href="config_generator.html">Config Generator</a></li>
-                          <li><a href="https://discord.gg/xdWemhA">Support</a></li>
-                        </ul>
-                </section>
-        </header>
-        <div class="container">
-                <h1>Chat Plug</h1>
-                <h2>Connect everything to one place</h2>
-            <div>
-                <a href="https://github.com/feelfreelinux/ChatPlug"><button class="git">I want to try!</button></a>
-                <a href="features.html"><button class="more">Read more</button></a>
+  <link rel="icon" href="img/chatplug.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+    integrity="sha256-zIG416V1ynj3Wgju/scU80KAEWOsO5rRLfVyRDuOv7Q="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <section class="hero is-fluid is-default has-text-centered">
+    <div class="hero-body">
+      <div id="chatplug-body" class="container">
+        <img class="chatplug-icon" src="img/chatplug.svg" alt="ChatPlug">
+        <h1 class="title main-title is-spaced">
+          <strong>ChatPlug</strong>
+        </h1>
+        <p>
+          <a href="https://github.com/feelfreelinux/ChatPlug/releases"  class="button is-info is-outlined">Downloads</a>&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/feelfreelinux/ChatPlug" class="button is-info is-outlined">Setup</a>&nbsp;&nbsp;&nbsp;
+          <a href="https://discord.gg/xdWemhA" class="button is-info is-outlined">Join Support Server</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-fluid is-default is-light has-text-centered caprine-screenshot">
+    <div class="container">
+      <img class="main-screenshot" src="img/screenshot.png" alt="screenshot">
+    </div>
+  </section>
+  <section class="container">
+    <div class="hero hero-body has-text-centered feature-title">
+      <h1 class="title main-title">Features</h1>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="hero">
+          <div class="hero-body has-text-centered feature-item">
+            <div class="screenshot">
+              <img class="screenshot-small" src="img/screenshot-bots.png" alt="screenshot" width="500">
             </div>
+            <h1 class="title is-spaced">Discord bots</h1>
+            <h2 class="subtitle">Your favorite Discord bots on Messenger</h2>
+          </div>
         </div>
-    </body>
-
+      </div>
+      <div class="column">
+        <div class="hero">
+          <div class="hero-body has-text-centered feature-item">
+            <div class="screenshot">
+              <img class="screenshot-small" src="img/screenshot-photos.png" alt="screenshot" width="500">
+            </div>
+            <h1 class="title is-spaced">Photos and stickers</h1>
+            <h2 class="subtitle">Photos and stickers from Messenger on Discord</h2>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="container more-features">
+    <div class="columns">
+      <div class="column">
+        <div class="hero">
+          <div class="hero-body has-text-centered feature-item">
+            <div class="screenshot">
+              <img class="screenshot-small" src="img/screenshot-crossplatform.png" alt="screenshot" width="500">
+            </div>
+            <h1 class="title is-spaced">Cross-platform</h1>
+            <h2 class="subtitle">Works on Windows, macOS, Linux and every Docker instance</h2>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="hero">
+          <div class="hero-body has-text-centered feature-item">
+            <div class="screenshot">
+              <img class="screenshot-small" src="img/screenshot-notification.png" alt="screenshot" width="500">
+            </div>
+            <h1 class="title is-spaced">Notifications</h1>
+            <h2 class="subtitle">Native notifications to keep you up to date</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer hero is-info is-paddingless">
+    <div class="hero-body">
+      <div class="container">
+        <div class="has-text-centered">
+          <p>
+            Created by <a href="https://bjorn.ml">Bjornskjald</a>,
+           edited by <a href="https://github.com/SerekKiri">SerekKir</a>.
+          </p>
+          <p class="disclaimer"><strong>ChatPlug</strong> is a third-party app and is not affiliated with Facebook, Discord, Telegram and other services.</p>
+          <div class="block">
+            <a class="button is-info is-inverted is-outlined" href="https://github.com/feelfreelinux/ChatPlug">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script async src="js/getDownload.js"></script>
+</body>
 </html>
