@@ -122,6 +122,16 @@ button {
     background-color: #0fbbf0;
 }
 
+.section {
+    margin: 0;
+    display: block;
+    padding: 10rem;
+}
+
+.section .container {
+    margin: 0;
+    position: relative;
+}
 
 @media (max-width: 400px) {
     body {
