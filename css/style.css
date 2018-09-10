@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('../assets/background.jpeg');
-    overflow: hidden;
     font-family: 'Source Sans Pro', sans-serif;
     color:#f2f2f2;
 }
@@ -122,16 +121,59 @@ button {
     background-color: #0fbbf0;
 }
 
-.section {
-    margin: 0;
-    display: block;
-    padding: 10rem;
-}
+.input::-moz-placeholder,
+			.textarea::-moz-placeholder {
+				color: rgba(54, 54, 54, 0.7);
+			}
 
-.section .container {
-    margin: 0;
-    position: relative;
-}
+			.input::-webkit-input-placeholder,
+			.textarea::-webkit-input-placeholder {
+				color: rgba(54, 54, 54, 0.7);
+			}
+
+			.input:-moz-placeholder,
+			.textarea:-moz-placeholder {
+				color: rgba(54, 54, 54, 0.7);
+			}
+
+			.input:-ms-input-placeholder,
+			.textarea:-ms-input-placeholder {
+				color: rgba(54, 54, 54, 0.7);
+            }
+            
+            .config::before {
+				background: #209cee;
+				border-radius: 2px 2px 0 0;
+				bottom: 98%;
+				color: rgba(0,0,0,.7);
+				content: "Config";
+				display: inline-block;
+				font-size: 10px;
+				font-weight: 700;
+				/* left: 5px; */
+				letter-spacing: 1px;
+				margin-left: -1px;
+				padding: 3px 5px;
+				position: absolute;
+				text-transform: uppercase;
+				vertical-align: top;
+			}
+
+			#config-chatplug::before {
+				content: "ChatPLug";
+			}
+
+			#config-messenger::before {
+				content: "Messenger";
+			}
+
+			#config-discord::before {
+				content: "Discord";
+			}
+
+			.config {
+				margin-bottom: 2rem !important;
+			}
 
 @media (max-width: 400px) {
     body {
