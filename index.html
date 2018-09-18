@@ -3,110 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simple Facebook Messenger to Discord bridge">
-  <meta name="author" content="Bjornskjald">
+  <meta name="description" content="SerekKiri CV">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="SerekKiri">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 
-  <title>ChatPlug</title>
+  <title>SerekKiri</title>
 
-  <link rel="icon" href="img/chatplug.png">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
-    integrity="sha256-zIG416V1ynj3Wgju/scU80KAEWOsO5rRLfVyRDuOv7Q="
-    crossorigin="anonymous" />
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-  <section class="hero is-fluid is-default has-text-centered">
-    <div class="hero-body">
-      <div id="chatplug-body" class="container">
-        <img class="chatplug-icon" src="img/chatplug.svg" alt="ChatPlug">
-        <h1 class="title main-title is-spaced">
-          <strong>ChatPlug</strong>
-        </h1>
-        <p>
-          <a href="https://github.com/feelfreelinux/ChatPlug/releases"  class="button is-info is-outlined">Downloads</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/feelfreelinux/ChatPlug" class="button is-info is-outlined">Setup</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://discord.gg/xdWemhA" class="button is-info is-outlined">Join Support Server</a>
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="hero is-fluid is-default is-light has-text-centered caprine-screenshot">
-    <div class="container">
-      <img class="main-screenshot" src="img/screenshot.png" alt="screenshot">
-    </div>
-  </section>
-  <section class="container">
-    <div class="hero hero-body has-text-centered feature-title">
-      <h1 class="title main-title">Features</h1>
-    </div>
-    <div class="columns">
-      <div class="column">
-        <div class="hero">
-          <div class="hero-body has-text-centered feature-item">
-            <div class="screenshot">
-              <img class="screenshot-small" src="img/screenshot-bots.png" alt="screenshot" width="500">
-            </div>
-            <h1 class="title is-spaced">Discord bots</h1>
-            <h2 class="subtitle">Your favorite Discord bots on Messenger</h2>
+    <section class="hero is-fluid is-default has-text-centered">
+        <div class="hero-body">
+          <div id="chatplug-body" class="container">
+            <img class="chatplug-icon" src="img/avatar.jpg" width="80rem" alt="ChatPlug">
+            <h1 class="title main-title is-spaced">
+              <strong>Serek Kiri</strong>
+            </h1>
+            <p>
+              <a href="https://github.com/SerekKiri"  class="button is-primary is-outlined">GitHub</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://steemit.com/@animek66" class="button is-primary is-outlined">Steemit</a>&nbsp;&nbsp;&nbsp;
+            </p>
           </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="hero">
-          <div class="hero-body has-text-centered feature-item">
-            <div class="screenshot">
-              <img class="screenshot-small" src="img/screenshot-photos.png" alt="screenshot" width="500">
-            </div>
-            <h1 class="title is-spaced">Photos and stickers</h1>
-            <h2 class="subtitle">Photos and stickers from Messenger on Discord</h2>
-          </div>
-      </div>
-    </div>
+      </section>
+  <section class="hero is-fluid is-default has-text-centered caprine-screenshot">
+    <section id="github" class="columns is-multiline is-centered">
+        
+
+    </section>
   </section>
-  <section class="container more-features">
-    <div class="columns">
-      <div class="column">
-        <div class="hero">
-          <div class="hero-body has-text-centered feature-item">
-            <div class="screenshot">
-              <img class="screenshot-small" src="img/screenshot-crossplatform.png" alt="screenshot" width="500">
-            </div>
-            <h1 class="title is-spaced">Cross-platform</h1>
-            <h2 class="subtitle">Works on Windows, macOS, Linux and every Docker instance</h2>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="hero">
-          <div class="hero-body has-text-centered feature-item">
-            <div class="screenshot">
-              <img class="screenshot-small" src="img/screenshot-notification.png" alt="screenshot" width="500">
-            </div>
-            <h1 class="title is-spaced">Notifications</h1>
-            <h2 class="subtitle">Native notifications to keep you up to date</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer hero is-info is-paddingless">
+</body>
+<footer class="footer hero is-success is-paddingless">
     <div class="hero-body">
       <div class="container">
         <div class="has-text-centered">
-          <p>
-            Created by <a href="https://bjorn.ml">Bjornskjald</a>,
-           edited by <a href="https://github.com/SerekKiri">SerekKiri</a>.
+          <p class="disclaimer">
+            <a href="https://github.com/SerekKiri"><Strong>SerekKiri</Strong></a> &copy; 2018
           </p>
-          <p class="disclaimer"><strong>ChatPlug</strong> is a third-party app and is not affiliated with Facebook, Discord, Telegram and other services.</p>
-          <div class="block">
-            <a class="button is-info is-inverted is-outlined" href="https://github.com/feelfreelinux/ChatPlug">Source Code</a>
-          </div>
         </div>
       </div>
     </div>
   </footer>
-  <script async src="js/getDownload.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    async function profile() {
+      const github = await axios.get('https://api.github.com/users/serekkiri/repos')
+        github.data.forEach(function(response) {
+        const github = document.getElementById('github')
+        github.innerHTML += `
+          <div class="box container">
+            <article class="media hero">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>${response.name}</strong>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a class="level-item" aria-label="reply">
+                        <span class="icon is-small">
+                            <i class="fas fa-code-branch" aria-hidden="true"></i>
+                          </span>
+                          &nbsp;
+                      ${response.forks}
+                    </a>
+                    <a class="level-item" aria-label="retweet">
+                      <span class="icon is-small">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </span>
+                      &nbsp;
+                      ${response.stargazers_count}
+                    </a>
+                    <a class="level-item" aria-label="retweet">
+                        <span class="icon is-small">
+                          <i class="fas fa-glasses" aria-hidden="true"></i>
+                        </span>
+                        &nbsp;
+                         ${response.watchers}
+                      </a>
+                    <a class="level-item" aria-label="like">
+                        <a class="button is-primary is-outlined" href="${response.html_url}">Github</a></a>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+          ` 
+      })
+      }
+
+      profile()
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 </body>
 </html>
