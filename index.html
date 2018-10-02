@@ -48,11 +48,18 @@
   </footer>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
-    
+
     async function profile() {
       const github = await axios.get('https://api.github.com/users/serekkiri/repos')
         github.data.forEach(function(response) {
+          
+         const subscribers = axios.get(response.subscribers_url).then(function(res){
+          let subCount = res.data.length;
+         
+          
+
         const github = document.getElementById('github')
+        
         github.innerHTML += `
           <div class="box container">
             <article class="media hero">
@@ -82,15 +89,10 @@
                           <i class="fas fa-glasses" aria-hidden="true"></i>
                         </span>
                         &nbsp;
-                         ${response.watchers}
+                         ${subCount}
                       </a>
                     <a class="level-item" aria-label="like">
-                        <a class="button is-primary is-outlined" href="${response.html_url}"><span class="icon is-small">
-                            &nbsp;  
-                          <i class="fab fa-github" aria-hidden="true"></i>
-                            &nbsp;
-                            &nbsp;
-                        </span>Github</a></a>
+                        <a class="button is-primary is-outlined" href="${response.html_url}">Github</a>
                     </a>
                   </div>
                 </nav>
@@ -98,6 +100,8 @@
             </article>
           </div>
           ` 
+        
+        })
       })
       }
       window.onload = profile()
