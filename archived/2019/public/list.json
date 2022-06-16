@@ -1,0 +1,105 @@
+[
+    {
+        "year": "2021",
+        "projects": [
+            {
+                "name": "Seek EV",
+                "description": "Project dedicated to electric cars, and it's build from the ground by myself. It includes dashboard build with vue.js and nuxt.js, main page build with react.js, backend in javascript, discord bot also in javascript and simple microservice in rust.",
+                "screenshot": "seek_ev",
+                "url": "https://seek-ev.com",
+                "github": "https://github.com/seek-ev/seek-ev.com"
+            },
+            {
+                "name": "Kiriko",
+                "description": "Kiriko is a friends project where we will take care of your new website.",
+                "screenshot": "kiriko",
+                "url": "https://kiriko.pl",
+                "github": "https://github.com/SerekKiri/kiriko.pl"
+            },
+            {
+                "name": "Lec Store",
+                "description": "Someday I just decided to build old version of store.lec.gg just because I liked it's design. In project there is react.js and next.js and firebase realtime database involved (Don't ask why I used realtime tho).",
+                "screenshot": "lec",
+                "url": "https://lec.kiri.dev",
+                "github": "https://github.com/SerekKiri/lec.gg"
+            }
+        ]
+    },
+    {
+        "year": "2020",
+        "projects": [
+            {
+                "name": "My portfolio",
+                "description": "My own portfolio build with react.js and typescript.",
+                "screenshot": "kiri",
+                "url": "/",
+                "github": "https://github.com/SerekKiri/kiri.dev"
+            },
+            {
+                "name": "Tęczowe wzgórzę",
+                "description": "Website for recreation center \"Tęczowe wzgórzę\" in Szczawnica, Poland. Build with react.js.",
+                "screenshot": "teczowe",
+                "url": "https://teczowe-wzgorze.pl",
+                "github": null
+            },
+            {
+                "name": "asapp",
+                "description": "Desktop app build with electron, vue.js and next.js to manage asasak.pl newsletter and moje35metrow.pl store.",
+                "screenshot": "asapp",
+                "url": "https://asasak.pl",
+                "github": "https://github.com/asasakpl/asapp"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "projects": [
+            {
+                "name": "Guildspeak",
+                "description": "Open source discord clone build with electron, react.js and graphql.",
+                "screenshot": "guildspeak",
+                "github": "https://github.com/guildspeak"
+            },
+            {
+                "name": "Chatplug",
+                "description": "ChatPlug is a simple and extensible bridge between Facebook (Messenger), Discord, Telegram and Slack. Build with vue.js, go, typescript and dart.",
+                "screenshot": "chatplug",
+                "github": "https://github.com/chatplug"
+            }
+        ]
+    },
+    {
+        "year": "2018",
+        "projects": [
+            {
+                "name": "Reddit Bot",
+                "description": "Discord bot build in javascript that allowed discord users to fetch posts staright from reddit.",
+                "screenshot": "reddit",
+                "github": "https://github.com/SerekKiri/RedditBot"
+            },
+            {
+                "name": "Wykoparka",
+                "description": "Discord bot build in javascript that allowed discord users to fetch posts directly from wykop.pl.",
+                "screenshot": "wykoparka",
+                "github": "https://github.com/SerekKiri/Wykoparka"
+            }
+        ]
+    },
+    {
+        "year": "2017",
+        "projects": [
+            {
+                "name": "Coin Bot",
+                "description": "Discord bot build in javascript that allowed discord users to fetch crypto coins info like price and 24 hour change.",
+                "screenshot": "coin",
+                "github": "https://github.com/SerekKiri/RedditBot"
+            },
+            {
+                "name": "Genevi",
+                "description": "Supposed to be a CV generator that became a markdown formatter (kind of). Build with react.",
+                "screenshot": "genevi",
+                "github": "https://github.com/SerekKiri/Genevi"
+            }
+        ]
+    }
+]
